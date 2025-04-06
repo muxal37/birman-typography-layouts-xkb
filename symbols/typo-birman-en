@@ -1,0 +1,66 @@
+
+partial default alphanumeric_keys
+xkb_symbols "typo-birman-en" {
+    name[Group1]= "English (Typographic by Ilya Birman)";
+    include "level3(ralt_switch)"
+    include "us(basic)"
+
+    // 1st keyboard row
+    key <TLDE> { [             grave,	     asciitilde,              NoSymbol,             dead_grave ] }; // "~"
+    key <AE01> { [                 1,            exclam,           onesuperior,               NoSymbol ] }; // "1""
+    key <AE02> { [                 2,          quotedbl,           twosuperior,                onehalf ] }; // "2"
+    key <AE03> { [                 3,        numerosign,         threesuperior,               onethird ] }; // "3"
+    key <AE04> { [                 4,         semicolon,                dollar,             onequarter ] }; // "4"
+    key <AE05> { [                 5,           percent,                 U2030,               NoSymbol ] }; // "5" // U+2030 PER MILLE SIGN (‰)
+    key <AE06> { [                 6,             colon,               uparrow,        dead_circumflex ] }; // "6"
+    key <AE07> { [                 7,          question,              NoSymbol,               NoSymbol ] }; // "7"
+    key <AE08> { [                 8,          asterisk,              infinity,               NoSymbol ] }; // "8" 
+    key <AE09> { [                 9,         parenleft,             leftarrow,                  U2039 ] }; // "9" // U+2039 SINGLE LEFT-POINTING ANGLE QUOTATION MARK
+    key <AE10> { [                 0,        parenright,            rightarrow,                  U203A ] }; // "0" // U+203A SINGLE RIGHT-POINTING ANGLE QUOTATION MARK
+    key <AE11> { [             minus,        underscore,                emdash,                 endash ] }; // "-"
+    key <AE12> { [             equal,              plus,              notequal,              plusminus ] }; // "="
+
+    // 2nd keyboard row
+    key <AD01> { [                 q,                 Q,              NoSymbol,             dead_breve  ] }; // "q"
+    key <AD02> { [                 w,                 W,              NoSymbol,               NoSymbol  ] }; // "w"
+    key <AD03> { [                 e,                 E,              EuroSign,               NoSymbol  ] }; // "e"
+    key <AD04> { [                 r,                 R,            registered,               NoSymbol  ] }; // "r"
+    key <AD05> { [                 t,                 T,             trademark,               NoSymbol  ] }; // "t"
+    key <AD06> { [                 y,                 Y,              NoSymbol,               NoSymbol  ] }; // "y"
+    key <AD07> { [                 u,                 U,              NoSymbol,               NoSymbol  ] }; // "u"
+    key <AD08> { [                 i,                 I,              NoSymbol,               NoSymbol  ] }; // "i"
+    key <AD09> { [                 o,                 O,              NoSymbol,               NoSymbol  ] }; // "o"
+    key <AD10> { [                 p,                 P,                 acute,            doubleacute  ] }; // "p"
+    key <AD11> { [       bracketleft,         braceleft,           bracketleft,              braceleft  ] }; // "["
+    key <AD12> { [      bracketright,        braceright,          bracketright,             braceright  ] }; // "]"
+
+    // 3rd keyboard row
+    key <AC01> { [                 a,                 A,                 U2248,                 U2318  ] }; // "a" // U+2248 ALMOST EQUAL TO // U+2318 PLACE OF INTEREST SIGN
+    key <AC02> { [                 s,                 S,               section,              NoSymbol  ] }; // "s"
+    key <AC03> { [                 d,                 D,                degree,                 U2300  ] }; // "d" // U+2300 DIAMETER SIGN
+    key <AC04> { [                 f,                 F,              sterling,              NoSymbol  ] }; // "f"
+    key <AC05> { [                 g,                 G,              NoSymbol,              NoSymbol  ] }; // "g" 
+    key <AC06> { [                 h,                 H,              NoSymbol,              NoSymbol  ] }; // "h"
+    key <AC07> { [                 j,                 J,    doublelowquotemark,              NoSymbol  ] }; // "j"
+    key <AC08> { [                 k,                 K,   leftdoublequotemark,   leftsinglequotemark  ] }; // "k"
+    key <AC09> { [                 l,                 L,  rightdoublequotemark,  rightsinglequotemark  ] }; // "l"
+    key <AC10> { [         semicolon,	          colon,   leftsinglequotemark,        dead_diaeresis  ] }; // ";"
+    key <AC11> { [        apostrophe,	       quotedbl,  rightsinglequotemark,              NoSymbol  ] }; // "'"
+    key <LSGT> { [         backslash,               bar,              NoSymbol,              NoSymbol  ] }; // "\"
+
+    // 4th keyboard row
+    key <BKSL> { [         backslash,               bar,              NoSymbol,              NoSymbol  ] };
+    key <AB01> { [                 z,                 Z,              NoSymbol,          dead_cedilla  ] }; // "z"
+    key <AB02> { [                 x,                 X,              multiply,                 U22C5  ] }; // "x" // U+22C5 DOT OPERATOR (·)
+    key <AB03> { [                 c,                 C,             copyright,                  cent  ] }; // "c"
+    key <AB04> { [                 v,                 V,             downarrow,            dead_caron  ] }; // "v"
+    key <AB05> { [                 b,                 B,              NoSymbol,              NoSymbol  ] }; // "b"
+    key <AB06> { [                 n,                 N,              NoSymbol,            dead_tilde  ] }; // "n"
+    key <AB07> { [                 m,                 M,                 U2212,              NoSymbol  ] }; // "m" // U+2212 MINUS SIGN (−)
+    key <AB08> { [       Cyrillic_be,       Cyrillic_BE,         guillemotleft,                 U201E  ] }; // "," // U+201E DOUBLE LOW-9 QUOTATION MARK
+    key <AB09> { [       Cyrillic_yu,       Cyrillic_YU,        guillemotright,                 U201C  ] }; // "." // U+201C LEFT DOUBLE QUOTATION MARK
+    key <AB10> { [             slash,          question,              NoSymbol,            dead_acute  ] }; // "/"
+
+    // 5th keyboard row
+    key <SPCE> { [             space,             space,          nobreakspace,          nobreakspace  ] }; // " "
+};
